@@ -1,0 +1,32 @@
+{
+  "name": "guardianbox-backend",
+  "version": "1.0.0",
+  "description": "GuardianBox — Zero-Knowledge Encrypted File Sharing (Backend)",
+  "private": true,
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start":  "node server.js",
+    "dev":    "node --watch server.js",
+    "test":   "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3":         "^3.614.0",
+    "@aws-sdk/s3-request-presigner": "^3.614.0",
+    "better-sqlite3":             "^9.6.0",
+    "cors":                       "^2.8.5",
+    "express":                    "^4.19.2",
+    "express-rate-limit":         "^7.3.1",
+    "helmet":                     "^7.1.0",
+    "morgan":                     "^1.10.0",
+    "multer":                     "^1.4.5-lts.1",
+    "node-cron":                  "^3.0.3",
+    "uuid":                       "^10.0.0"
+  },
+  "devDependencies": {
+    "jest":          "^29.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
