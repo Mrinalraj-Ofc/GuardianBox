@@ -25,3 +25,13 @@ Thumbs.db
 # Python
 __pycache__/
 *.pyc
+
+*.db
+*.db-shm
+*.db-wal
+
+
+*.db
+*.db-shm
+*.db-wal
+
