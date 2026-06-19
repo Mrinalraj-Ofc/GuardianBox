@@ -48,7 +48,7 @@ app.use(
  */
 app.use(
   cors({
-    origin:        origin: [
+    origin: [
     'http://localhost:5173',
     'http://18.61.174.171:8080'
   ],
