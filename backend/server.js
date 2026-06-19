@@ -48,7 +48,10 @@ app.use(
  */
 app.use(
   cors({
-    origin:      process.env.FRONTEND_URL || 'http://localhost:5173',
+    origin:        origin: [
+    'http://localhost:5173',
+    'http://18.61.174.171:8080'
+  ],
     methods:     ['GET', 'POST', 'DELETE'],
     credentials: false,
   })

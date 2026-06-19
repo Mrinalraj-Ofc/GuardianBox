@@ -16,7 +16,8 @@ import {
   buildShareURL,
 } from '../utils/cryptoUtils.js';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
+const API_BASE = import.meta.env.VITE_API_URL ||
+  'http://18.61.174.171:4000/api';;
 
 // ─── Expiry Options ───────────────────────────────────────────────────────────
 
