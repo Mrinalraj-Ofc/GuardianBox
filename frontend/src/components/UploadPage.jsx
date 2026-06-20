@@ -127,7 +127,7 @@ export default function UploadPage() {
       formData.append('expiresIn',    expiresIn.toString());
       formData.append('maxDownloads', maxDownloads.toString());
 
-      const response = await fetch(`${API_BASE}/files/upload`, {
+      const response = await fetch(`${API_BASE}/api/files/upload`, {
         method: 'POST',
         body:   formData,
       });
