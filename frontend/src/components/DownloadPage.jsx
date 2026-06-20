@@ -67,7 +67,7 @@ export default function DownloadPage() {
     if (parsed.mode === 'auto') setFragKey(parsed.secret);
 
     // Fetch file metadata from the server
-    fetch(`${API_BASE}/files/${fileId}/meta`)
+    fetch(`${API_BASE}/api/files/${fileId}/meta`)
       .then((res) => {
         if (!res.ok) throw new Error('File not found or has expired.');
         return res.json();
@@ -94,7 +94,7 @@ export default function DownloadPage() {
 
     try {
       // 1. Fetch the encrypted blob from the server
-      const blobRes = await fetch(`${API_BASE}/files/${fileId}`);
+      const blobRes = await fetch(`${API_BASE}/api/files/${fileId}`);
       if (!blobRes.ok) {
         const body = await blobRes.json().catch(() => ({}));
         throw new Error(body.error || 'Failed to fetch encrypted file.');
