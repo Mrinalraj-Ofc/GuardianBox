@@ -49,10 +49,11 @@ app.use(
 app.use(
   cors({
     origin: [
-    'http://localhost:5173',
-    'http://18.61.174.171:8080'
-  ],
-    methods:     ['GET', 'POST', 'DELETE'],
+  'http://localhost:5173',
+  'http://16.112.68.38:8080',
+  'https://guardian-box-abc.vercel.app'
+],
+     methods:     ['GET', 'POST', 'DELETE'],
     credentials: false,
   })
 );
