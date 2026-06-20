@@ -53,7 +53,8 @@ app.use(
   'http://localhost:8080',
   'http://16.112.68.38:8080',
   'http://18.61.174.171:8080',
-  'https://guardian-box.vercel.app'
+  'https://guardian-box.vercel.app',
+  'https://guardcrypto.vercel.app'
 ],
      methods:     ['GET', 'POST', 'DELETE'],
     credentials: false,
